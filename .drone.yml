@@ -1,7 +1,7 @@
 pipeline:
   build:
     image: plugins/docker
-    repo: registry.honestbee.com/swagger-ui:master
+    repo: registry.honestbee.com/swagger-ui
     tags:
       - ${DRONE_COMMIT_SHA:8}
       - ${DRONE_COMMIT_BRANCH}
