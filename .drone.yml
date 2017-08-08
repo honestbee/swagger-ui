@@ -5,6 +5,8 @@ pipeline:
     tags:
       - ${DRONE_COMMIT_SHA:0:7}
       - ${DRONE_COMMIT_BRANCH}
+    when:
+      branch: [ master ]
 
   helm-deploy-staging:
     image: quay.io/honestbee/drone-helm
